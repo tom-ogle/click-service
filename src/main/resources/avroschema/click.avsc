@@ -1,0 +1,14 @@
+{
+    "namespace" : "example.clickstream",
+    "type": "record",
+    "name": "AvroClick",
+    "fields": [
+        {"name": "ip", "type" : "string"},
+        {"name": "timestamp", "type": "long"},
+        {"name": "link", "type" : "string"},
+        {"name": "referer", "type" : "string"},
+        {"name": "userAgent", "type" : "string"}
+    ]
+
+
+}
