@@ -1,7 +1,8 @@
-package com.tomogle.clickservice
+package com.tomogle.clickservice.server
 
 import java.net.InetSocketAddress
 
+import com.tomogle.clickservice.ClickReportingProtocol
 import org.apache.avro.ipc.specific.SpecificResponder
 import org.apache.avro.ipc.{NettyServer, Server}
 

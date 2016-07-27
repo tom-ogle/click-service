@@ -1,4 +1,4 @@
-package com.tomogle.clickservice
+package com.tomogle.clickservice.server
 
 trait ClickService {
   self: ServerModule =>

@@ -1,4 +1,6 @@
-package com.tomogle.clickservice
+package com.tomogle.clickservice.server
+
+import com.tomogle.clickservice.{Click, ClickReportingProtocol}
 
 trait ClickReportingProtocolModule {
 
@@ -11,7 +13,7 @@ trait PrintlnClickReportingProtocolModule extends ClickReportingProtocolModule {
 }
 class PrintlnClickReportingProtocol extends ClickReportingProtocol {
   override def reportClick(click: Click): Null = {
-    println(click)
+    println(s"Received click: $click")
     null
   }
 }
