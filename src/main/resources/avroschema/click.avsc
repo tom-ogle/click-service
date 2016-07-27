@@ -1,7 +1,7 @@
 {
-    "namespace" : "example.clickstream",
+    "namespace" : "com.tomogle.clickservice",
     "type": "record",
-    "name": "AvroClick",
+    "name": "Click",
     "fields": [
         {"name": "ip", "type" : "string"},
         {"name": "timestamp", "type": "long"},

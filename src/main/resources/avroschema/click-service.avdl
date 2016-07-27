@@ -1,0 +1,11 @@
+@namespace("com.tomogle.clickservice")
+protocol ClickReportingProtocol {
+
+    import schema "click.avsc";
+
+    error ReportingError {
+        string message;
+    }
+
+    void reportClick(Click click) throws ReportingError;
+}

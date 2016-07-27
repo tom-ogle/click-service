@@ -9,6 +9,8 @@ val avroVersion = "1.8.1"
 sbtavrohugger.SbtAvrohugger.specificAvroSettings
 (sourceDirectory in avroConfig) := new java.io.File("src/main/resources/avroschema")
 
+unmanagedClasspath in Compile += baseDirectory.value / s"$sourceManaged/main"
+
 libraryDependencies += "org.apache.avro" % "avro" % avroVersion
 libraryDependencies += "org.apache.avro" % "avro-ipc" % avroVersion
 

@@ -17,3 +17,5 @@ project/plugins/project/
 *.war
 *.ear
 hs_err_pid*
+.idea/
+*.iml
